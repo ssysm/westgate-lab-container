@@ -9,4 +9,6 @@ RUN git config --global user.name "Emu Westgate Container"
 
 RUN ssh-keygen -t rsa -b 4096 -C Container -N '' -f ~/.ssh/id_rsa 
 
+VOLUME /root/code
+
 CMD ["/bin/bash"]
